@@ -39,5 +39,13 @@ def build_command_callback(command):
     return callback
 
 if __name__ == '__main__':
-    monitor(sys.argv[1],
-            build_command_callback(sys.argv[2]))
+    if len(sys.argv) != 3:
+        print 'Syntax:'
+        print 'ponytor PATH_TO_WATCH COMMAND_TO_RUN'
+        print 'Example:'
+        print 'ponytor working_on_this.py "echo `date` && python working_on_this.py"'
+        sys.exit(1)
+    else:
+        print '(running, stop with Ctrl-C)'
+        monitor(sys.argv[1],
+                build_command_callback(sys.argv[2]))
