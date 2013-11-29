@@ -38,7 +38,8 @@ def build_command_callback(command):
 
     return callback
 
-if __name__ == '__main__':
+
+def main():
     if len(sys.argv) != 3:
         print 'Syntax:'
         print 'ponytor PATH_TO_WATCH COMMAND_TO_RUN'
@@ -49,3 +50,7 @@ if __name__ == '__main__':
         print '(running, stop with Ctrl-C)'
         monitor(sys.argv[1],
                 build_command_callback(sys.argv[2]))
+
+
+if __name__ == '__main__':
+    main()

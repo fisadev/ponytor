@@ -12,7 +12,7 @@ setup(
     author_email = 'fisadev@gmail.com',
     url='http://github.com/fisadev/ponytor',
     py_modules=['ponytor',],
-    scripts=['ponytor',],
+    entry_points = {'console_scripts': ['ponytor = ponytor:main',],},
     install_requires=['pyinotify',],
     license='LICENSE.txt',
     classifiers = [
