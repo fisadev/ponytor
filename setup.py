@@ -11,7 +11,7 @@ setup(
     author = u'Juan Pedro Fisanotti',
     author_email = 'fisadev@gmail.com',
     url='http://github.com/fisadev/ponytor',
-    packages=['ponytor',],
+    py_modules=['ponytor',],
     scripts=['ponytor',],
     license='LICENSE.txt',
     classifiers = [
