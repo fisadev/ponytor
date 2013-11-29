@@ -13,6 +13,7 @@ setup(
     url='http://github.com/fisadev/ponytor',
     py_modules=['ponytor',],
     scripts=['ponytor',],
+    requires=['pyinotify',],
     license='LICENSE.txt',
     classifiers = [
         'Intended Audience :: Developers',
