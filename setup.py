@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from distutils.core import setup
+from setuptools import setup
 
 setup(
     name='ponytor',
@@ -13,7 +13,7 @@ setup(
     url='http://github.com/fisadev/ponytor',
     py_modules=['ponytor',],
     scripts=['ponytor',],
-    requires=['pyinotify',],
+    install_requires=['pyinotify',],
     license='LICENSE.txt',
     classifiers = [
         'Intended Audience :: Developers',
