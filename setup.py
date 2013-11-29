@@ -12,6 +12,7 @@ setup(
     author_email = 'fisadev@gmail.com',
     url='http://github.com/fisadev/ponytor',
     packages=['ponytor',],
+    scripts=['ponytor',],
     license='LICENSE.txt',
     classifiers = [
         'Intended Audience :: Developers',
