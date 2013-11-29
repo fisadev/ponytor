@@ -43,14 +43,6 @@ Example: the same as the command line tool usage example
 
 .. code-block:: python
 
-    from ponytor import monitor
-
-    monitor('/path/to/monitor.txt', function_to_run_on_change)
-
-Example: the same as the command line tool usage example
-
-.. code-block:: python
-
     from os import system
     from ponytor import monitor
 
