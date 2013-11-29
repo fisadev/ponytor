@@ -32,7 +32,7 @@ def monitor(watch_path, callback):
     notifier.loop()
 
 
-def build_system_callback(command):
+def build_command_callback(command):
     def callback():
         os.system(command)
 
@@ -40,4 +40,4 @@ def build_system_callback(command):
 
 if __name__ == '__main__':
     monitor(sys.argv[1],
-            build_system_callback(sys.argv[2]))
+            build_command_callback(sys.argv[2]))
